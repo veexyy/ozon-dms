@@ -1,4 +1,12 @@
 .payout {
+  &__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include small-tablet {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
   &__title {
     color: $dark-blue;
     margin-bottom: 32px;

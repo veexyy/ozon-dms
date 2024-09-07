@@ -1,0 +1,24 @@
+.trust {
+  &__section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include small-tablet {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__container {
+    background-image: linear-gradient(to right, #70C6FF, #3491FF);
+    color: $white;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 32px;
+    border-radius: 24px;
+    @include small-tablet {
+      padding: 24px;
+    }
+  }
+  &__title {
+    max-width: 448px;
+  }
+}
