@@ -18,9 +18,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__cell:last-child {
     grid-column: span 2;
+    @include small-tablet {
+      grid-column: span 1;
+    }
   }
   &__cell .title {
     color: $dark-blue;
