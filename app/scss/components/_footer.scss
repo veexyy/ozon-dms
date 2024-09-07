@@ -1,0 +1,55 @@
+.footer{
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  &__title {
+    color: $dark-blue;
+    margin-bottom: 19px;
+  }
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 19px;
+    a {
+      color: $black;
+      font-size: 14px;
+    }
+    span {
+      color: $dark-blue;
+      opacity: 0.4;
+      font-size: 12px;
+    }
+  }
+  &__messengers {
+    display: flex;
+    gap: 12px;
+    @include tablet {
+      margin-bottom: 39px;
+    }
+  }
+  &__logo-block {
+    cursor: pointer;
+    background-color: $footer-logo-block;
+  }
+  &__bottom {
+    font-size: 10px;
+    font-weight: 500;
+    color: $gray;
+    margin-bottom: 40px;
+  }
+  &__link {
+    color: $blue;
+  }
+}

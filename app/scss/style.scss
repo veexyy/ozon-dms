@@ -1,0 +1,9 @@
+@import "reset";
+@import "mixin";
+@import "fonts";
+@import "vars";
+@import "global";
+
+@import './components/header';
+@import './components/main';
+@import './components/footer';

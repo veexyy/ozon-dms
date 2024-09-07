@@ -66,7 +66,7 @@ function htmlInclude() {
 function scripts() {
   return (
     src([
-      "app/js/index.js",
+      "app/js/main.js",
     ])
       .pipe(concat("main.min.js"))
       // .pipe(uglify())

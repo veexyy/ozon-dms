@@ -1,0 +1,40 @@
+body {
+  font-family: 'GTEestiProDisplay', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background: $bg-default;
+}
+.container {
+  max-width: 1185px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.sr-only {
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.logo {
+ font-size: 33px;
+ font-weight: 500;
+}
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: left;
+}
+.logo-block {
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  padding: 12px;
+  background-color: $dark-white;
+}

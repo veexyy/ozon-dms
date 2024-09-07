@@ -1,15 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/GTEestiProDisplay-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GTEestiProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GTEestiProDisplay-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GTEestiProDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GTEestiProDisplay-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GTEestiProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <title>Ozon Страхование</title>
 </head>
 <body>
-  <section>хедер</section>
+  <section class="header__section">
+  <div class="container header__container">
+    <a href="/">
+      <div class="logo header__logo" >
+        ozon страхование
+      </div>
+    </a>
+    <div class="header__burger">
+      <img src="../images/burger.svg" alt="burger-menu">
+    </div>
+  </div>
+  <div class="header__line"></div>
+</section>
   <main>
     <section>главный</section>
   </main>
-  <section>футер</section>
+  <section class="footer footer__section">
+  <div class="container footer__container">
+    <div class="footer__contacts">
+      <div class="footer__left">
+        <h3 class="footer__title">Контакты для связи</h3>
+        <div class="footer__phone">
+          <a href="tel:8 (800) 550-35-64">8 (800) 550-35-64</a>
+          <span>Телефон</span>
+        </div>
+        <div class="footer__messengers">
+          <div class="footer__logo-block logo-block">
+            <img src="../images/whatsapp_icon.svg" alt="whatsapp">
+          </div>
+          <div class="footer__logo-block logo-block">
+            <img src="../images/telegram_icon.svg" alt="telegram">
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+       <a href="https://mainsgroup.ru/">
+          <div class="mains__logo">
+            <img src="../images/mains-logo.svg" alt="mains">
+          </div>
+       </a>
+      </div>
+    </div class="footer__contacts">
+    <p class="footer__bottom">Финансовая услуга по подбору вариантов страхования предоставляется <a class="footer__link" href="https://mainsgroup.ru/">ООО «МСБК»</a>. Лицензия Банка России СБ№4353 выдана 12.08.2021 без ограничения срока действия.</p>
+  </div>
+  </div>
+</section>
 </body>
+<script type="module" src="js/main.min.js"></script>
 </html>
