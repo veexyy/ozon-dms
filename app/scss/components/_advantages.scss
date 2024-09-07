@@ -1,0 +1,33 @@
+.advantages {
+  &__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include small-tablet {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__title {
+    color: $dark-blue;
+    margin-bottom: 32px;
+    @include small-tablet {
+      margin-bottom: 16px;
+    }
+  }
+  &__cells {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  &__cell:last-child {
+    grid-column: span 2;
+  }
+  &__cell .title {
+    color: $dark-blue;
+    margin-bottom: 12px;
+  }
+  &__cell .subtitle {
+    color: $dark-gray;
+    max-width: 400px;
+  }
+}
