@@ -1,5 +1,12 @@
 .calculate {
-  
+  &__section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include small-tablet {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
   &__title {
     font-size: 30px;
     @include small-tablet {

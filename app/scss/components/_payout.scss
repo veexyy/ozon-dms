@@ -1,0 +1,56 @@
+.payout {
+  &__title {
+    color: $dark-blue;
+    margin-bottom: 32px;
+    @include small-tablet {
+      margin-bottom: 12px;
+    }
+  }
+  &__cells {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__cell {
+    &:first-child,
+    &:nth-child(2) {
+      grid-column: span 3;
+      @include tablet {
+        grid-column: span 1;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      grid-column: span 2;
+      @include tablet {
+        grid-column: span 1;
+      }
+    }
+  }
+  &__cell .title {
+    color: $dark-blue;
+    font-size: 30px;
+    @include small-tablet {
+      font-size: 24px;
+    }
+  }
+  &__cell .subtitle {
+    color: $dark-gray;
+    font-size: 20px;
+  }
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
