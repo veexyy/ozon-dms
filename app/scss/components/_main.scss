@@ -1,0 +1,52 @@
+.main {
+  &__section {
+    background-color: $blue;
+    color: $white;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    max-width: 484px;
+  }
+  &__container {
+    padding-top: 116px;
+    padding-bottom: 55px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 65px;
+  }
+  &__bottom {
+    max-width: 1007px;
+    background-color: #00598A66;
+    padding: 20px 32px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &__text-block .title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  &__text-block .subtitle {
+    font-size: 14px;
+  }
+  &__btn {
+    color: $blue;
+    background: $white;
+  }
+  &__line {
+    height: 48px;
+    background: #CCCCDD;
+    opacity: 0.6;
+    width: 2px;
+  }
+}
