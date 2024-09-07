@@ -3,12 +3,18 @@ body {
   font-size: 20px;
   font-weight: 400;
   background: $bg-default;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1185px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .sr-only {
   position: absolute;
@@ -29,7 +35,7 @@ body {
   font-weight: 700;
   text-align: left;
 }
-.logo-block {
+.icon-block {
   border-radius: 16px;
   display: flex;
   justify-content: center;
@@ -42,7 +48,6 @@ body {
   border-radius: 12px;
   color: $white;
   background: $blue;
-  max-width: fit-content;
   padding: 18px 24px;
   font-weight: 500;
   font-size: 16px;

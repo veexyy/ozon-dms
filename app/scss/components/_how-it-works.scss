@@ -1,0 +1,91 @@
+.how {
+  &__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 24px;
+    @include mobile {
+      background-color: $white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    @include tablet {
+      color: $dark-blue;
+    }
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: $white;
+    flex-basis: 0;
+    flex-grow: 1;
+    @include mobile {
+      flex-direction: row;
+      gap: 16px;
+      justify-content: start;
+      padding: 0 8px 8px 0;
+    }
+  }
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text-block .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    @include mobile {
+      color: $dark-blue;
+      font-weight: 500;
+      margin-bottom: 4px;
+      font-size: 20px;
+    }
+  }
+  &__text-block .subtitle {
+    font-size: 20px;
+    color: rgba($dark-blue, 0.4);
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  &__icon-block {
+    font-size: 30px;
+    min-width: 56px;
+    max-width: 56px;
+    min-height: 56px;
+    max-height: 56px;
+    padding: 12px 20px;
+    color: $blue;
+    font-weight: 700;
+    margin-bottom: 24px;
+    @include mobile {
+      margin-bottom: 0;
+      align-self: start;
+      background-color: #0096FF14;
+      font-size: 16px;
+      font-weight: normal;
+      min-width: 44px;
+      min-height: 44px;
+      max-height: 44px;
+      max-width: 44px;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    @include mobile {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+}
