@@ -21,6 +21,8 @@
     }
     &-block {
       background-color: $light-blue;
+      position: relative;
+      overflow: hidden;
     padding-top: 40px;
     padding-bottom: 40px;
     border-radius: 24px;
@@ -46,7 +48,9 @@
     background-color: $orange;
   }
   &__form {
+    position: relative;
     background-color: #8AB9FE99;
+    backdrop-filter: blur(4px);
     max-width: 500px;
     color: $white;
     display: flex;
@@ -93,6 +97,25 @@
     font-size: 12px;
     &-input {
       visibility: hidden;
+    }
+  }
+  &__left-img {
+    position: absolute;
+    bottom: -400px;
+    left: -200px;
+    img {
+      border-bottom-left-radius: 16px;
+    }
+    @include small-tablet {
+      top: -0%;
+    }
+  }
+  &__right-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include tablet {
+      display: none;
     }
   }
 }

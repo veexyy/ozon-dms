@@ -22,6 +22,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
-    "inputmask": "^5.0.7"
+    "inputmask": "^5.0.7",
+    "swiper": "^8.4.7"
   }
 }

@@ -3,11 +3,15 @@
 @import "fonts";
 @import "vars";
 @import "global";
+@import 'libs';
 
 @import './components/header';
 @import './components/main';
 @import './components/how-it-works';
-@import './components/widget';
+@import './components/calculate-widget';
+@import './components/tariff-widget';
+@import './components/about-company-widget';
+@import './components/contact-widget';
 @import './components/trust';
 @import './components/payout';
 @import './components/advantages';

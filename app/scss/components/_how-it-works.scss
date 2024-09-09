@@ -3,6 +3,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     border-radius: 24px;
+    position: relative;
+    z-index: 1;
     @include mobile {
       background-color: $white;
       padding-top: 20px;

@@ -1,6 +1,8 @@
 .header{
   &__section{
     background: $blue;
+    position: relative;
+    z-index: 1;
     @include tablet {
       background-color: $white;
     }

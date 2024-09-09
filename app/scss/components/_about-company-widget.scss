@@ -1,0 +1,123 @@
+.about-company {
+  &__section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include small-tablet {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    @include small-tablet {
+      font-size: 24px;
+    }
+  }
+  &__progress {
+    &-text {
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+    &-block {
+      background-color: $light-blue;
+      position: relative;
+      overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    @include small-tablet {
+      padding: 16px;
+    }
+    }
+  }
+  &__steps {
+    display: flex;
+    max-width: max-content;
+    gap: 4px;
+  }
+  &__progress-step {
+    height: 4px;
+    width: 60px;
+    background-color: #CCD6E466;
+    border-radius: 2px;
+  }
+  &__progress-step:not(:nth-child(4)) {
+    background-color: $orange;
+  }
+  &__form {
+    background-color: #8AB9FE99;
+    position: relative;
+    backdrop-filter: blur(4px);
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 580px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 40px;
+    border-radius: 20px;
+    &-title {
+      font-size: 24px;
+      @include small-tablet {
+        font-size: 20px;
+      }
+    }
+    &-subtitle {
+      font-size: 16px;
+      @include small-tablet {
+        font-size: 14px;
+      }
+    }
+    @include small-tablet {
+      padding: 24px 16px;
+    }
+    @include mobile {
+      min-width: 300px;
+    }
+  }
+ &__form input {
+   outline: none;
+   border: none;
+   border-radius: 12px;
+   padding: 16px;
+   &:last-child {
+     margin-bottom: 16px;
+   }
+ }
+
+  &__form input::placeholder {
+    color: #707F8D;
+    font-size: 16px;
+  }
+  &__checkbox-menu {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  &__btn {
+    margin: auto 0 0 0;
+  }
+  &__left-img {
+    position: absolute;
+    bottom: -400px;
+    left: -200px;
+    img {
+      border-bottom-left-radius: 16px;
+    }
+    @include small-tablet {
+      top: -0%;
+    }
+  }
+  &__right-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include tablet {
+      display: none;
+    }
+  }
+}

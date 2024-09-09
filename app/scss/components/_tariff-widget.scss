@@ -1,0 +1,340 @@
+.tariff {
+  &__section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include small-tablet {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    @include small-tablet {
+      font-size: 24px;
+    }
+  }
+  &__progress {
+    &-text {
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+    &-block {
+      background-color: $light-blue;
+      position: relative;
+      overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    @include small-tablet {
+      padding: 16px;
+    }
+    }
+  }
+  &__steps {
+    display: flex;
+    max-width: max-content;
+    gap: 4px;
+  }
+  &__progress-step {
+    height: 4px;
+    width: 60px;
+    background-color: #CCD6E466;
+    border-radius: 2px;
+  }
+  &__progress-step:first-child, &__progress-step:nth-child(2) {
+    background-color: $orange;
+  }
+  &__form {
+    background-color: #8AB9FE99;
+    position: relative;
+    backdrop-filter: blur(4px);
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 580px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 40px;
+    border-radius: 20px;
+    &-title {
+      font-size: 24px;
+      @include small-tablet {
+        font-size: 20px;
+      }
+    }
+    &-subtitle {
+      font-size: 16px;
+      @include small-tablet {
+        font-size: 14px;
+      }
+    }
+    @include small-tablet {
+      padding: 24px 16px;
+    }
+    @include mobile {
+      min-width: 330px;
+    }
+  }
+  &__checkbox-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+      border-radius: 16px;
+    }
+  }
+  &__btn {
+    margin: auto 0 0 0;
+  }
+  &__left-img {
+    position: absolute;
+    bottom: -400px;
+    left: -200px;
+    img {
+      border-bottom-left-radius: 16px;
+    }
+    @include small-tablet {
+      top: -0%;
+    }
+  }
+  &__right-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__block {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__block-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      color: #10C44C;
+    }
+  }
+  &__block-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+    a {
+      font-size: 12px;
+      color: $blue;
+      align-self: flex-start;
+    }
+  }
+  &__block-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.custom-radio-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: $white;
+  padding: 2px;
+}
+
+.custom-radio-menu input[type="radio"] {
+  display: none;
+}
+
+.custom-radio-menu label {
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 9px 44.25px;
+  color: #001A3499;
+  @include small-tablet {
+    padding: 9px 52px;
+  }
+  @include mobile {
+    padding: 9px 18.75px;
+  }
+}
+
+.custom-radio-menu label:hover {
+  opacity: 0.7;
+}
+
+.custom-radio-menu input[type="radio"]:checked + label {
+  background-color: $blue;
+  border-radius: 8px;
+  color: $white;
+}
+
+    @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+      .checkbox-wrapper-14 input[type=checkbox] {
+        padding-bottom: 21px;
+        padding-right: 38px;
+        --active: #275EFE;
+        --active-inner: #fff;
+        --border: #fff;
+        --background: #6183A242;
+        --disabled: #F6F8FF;
+        --disabled-inner: #E1E6F9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 18px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:after {
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:checked {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: .3s;
+        --d-t: .6s;
+        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: 0.9;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:disabled:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:disabled+label {
+        cursor: not-allowed;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:hover:not(:checked):not(:disabled) {
+        --bc: var(--border-hover);
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:focus {
+        box-shadow: 0 0 0 var(--focus);
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:not(.switch) {
+        width: 21px;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:not(.switch):after {
+        opacity: var(--o, 0);
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:not(.switch):checked {
+        --o: 1;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]+label {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-left: 4px;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:not(.switch) {
+        border-radius: 7px;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:not(.switch):after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+        transform: rotate(var(--r, 20deg));
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox]:not(.switch):checked {
+        --r: 43deg;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox].switch {
+        width: 38px;
+        border-radius: 11px;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox].switch:after {
+        left: 3px;
+        top: 3px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox].switch:checked {
+        --ab: var(--active-inner);
+        --x: 17px;
+      }
+  
+      .checkbox-wrapper-14 input[type=checkbox].switch:disabled:not(:checked):after {
+        opacity: 0.6;
+      }
+    }
+    .checkbox-wrapper-14 {
+      display: flex;
+      background-color: $white;
+      color: $black;
+      gap: 3px;
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 16px;
+      text-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      &:first-child {
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+      }
+      &:last-child {
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+      @include small-tablet {
+        border-radius: 0;
+        padding: 12px;
+      }
+    }
+    .checkbox-wrapper-14 * {
+      box-sizing: inherit;
+    }
+  
+    .checkbox-wrapper-14 *:before,
+    .checkbox-wrapper-14 *:after {
+      box-sizing: inherit;
+    }

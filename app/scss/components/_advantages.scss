@@ -14,17 +14,49 @@
       margin-bottom: 16px;
     }
   }
+  &__container {
+    position: relative;
+  }
   &__cells {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    @include small-tablet {
+    @include mobile {
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  &__cell {
+    @include mobile {
+      padding: 24px;
+    }
+  }
+  &__cell {
+    display: flex;
+    @include tablet {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 12px;
+    }
+  }
+  &__image:not(:last-child) {
+    position: absolute;
+    right: 50px;
+    max-width: 495px;
+    bottom: 0;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__image-mobile {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+
   &__cell:last-child {
     grid-column: span 2;
-    @include small-tablet {
+    @include tablet {
       grid-column: span 1;
     }
   }
