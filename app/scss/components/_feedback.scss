@@ -44,6 +44,8 @@
     }
     &-input::placeholder {
       color: #707F8D;
+      font-size: 16px;
+      padding-left: 10px;
     }
     @include mobile {
       flex-direction: column;
