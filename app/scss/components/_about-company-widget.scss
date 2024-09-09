@@ -107,6 +107,9 @@
     left: -200px;
     img {
       border-bottom-left-radius: 16px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     @include small-tablet {
       top: -0%;

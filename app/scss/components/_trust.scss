@@ -2,6 +2,7 @@
   &__section {
     padding-bottom: 60px;
     padding-top: 60px;
+    overflow: hidden;
     @include small-tablet {
       padding-top: 20px;
       padding-bottom: 20px;
