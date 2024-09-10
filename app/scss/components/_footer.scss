@@ -1,4 +1,8 @@
 .footer{
+  padding-top: 80px;
+  @include small-tablet {
+    padding-top: 50px;
+  }
   &__container {
     display: flex;
     flex-direction: column;

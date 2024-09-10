@@ -14,7 +14,7 @@
   <title>Ozon Страхование</title>
 </head>
 <body>
-  <header class="header__section">
+  <header class="header">
   <div class="container header__container">
     <a href="/">
       <div class="logo header__logo" >
@@ -76,46 +76,46 @@
     <section class="how__section">
   <div class="container how__container">
     <h2 class="title how__title">Как это работает</h2>
-    <div class="how__cards">
-      <div class="how__block">
+    <ul class="how__cards">
+      <li class="how__block">
         <div class="icon-block how__icon-block">1</div>
-        <p class="how__text-block">
-          <span class="title">Укажите число сотрудников</span>
-          <span class="subtitle">Чтобы рассчитать стоимость</span>
-        </p>
-      </div>
-      <div class="how__block">
+        <div class="how__text-block">
+          <h3 class="title">Укажите число сотрудников</h3>
+          <p class="subtitle">Чтобы рассчитать стоимость</p>
+        </div>
+      </li>
+      <li class="how__block">
         <div class="icon-block how__icon-block">2</div>
-        <p class="how__text-block">
-          <span class="title">Выберите предложение</span>
-          <span class="subtitle">Которое вам больше всего подходит</span>
-        </p>
-      </div>
-      <div class="how__block">
+        <div class="how__text-block">
+          <h3 class="title">Выберите предложение</h3>
+          <p class="subtitle">Которое вам больше всего подходит</p>
+        </div>
+      </li>
+      <li class="how__block">
         <div class="icon-block how__icon-block">3</div>
-        <p class="how__text-block">
-          <span class="title">Оформите договор</span>
-          <span class="subtitle">При помощи нашего менеджера</span>
-        </p>
-      </div>
-      <div class="how__block">
+        <div class="how__text-block">
+          <h3 class="title">Оформите договор</h3>
+          <p class="subtitle">При помощи нашего менеджера</p>
+        </div>
+      </l>
+      <li class="how__block">
         <div class="icon-block how__icon-block">4</div>
-        <p class="how__text-block">
-          <span class="title">Оплатите счёт</span>
-          <span class="subtitle">Пришлём все документы на вашу почту</span>
-        </p>
-      </div>
-    </div>
+        <div class="how__text-block">
+          <h3 class="title">Оплатите счёт</h3>
+          <p class="subtitle">Пришлём все документы на вашу почту</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
     <section class="calculate__section">
   <div class="container calculate__container">
     <div class="calculate__progress-block">
       <div class="calculate__left-img">
-        <img src="../images/left-side-widget.png" alt="widget">
+        <img src="../images/left-side-widget.png" loading="lazy" width="842" height="854" alt="widget">
       </div>
       <div class="calculate__right-img">
-        <img src="../images/right-side-widget.png" alt="widget">
+        <img src="../images/right-side-widget.png" loading="lazy" width="536" height="289" alt="widget">
       </div>
       <form class="calculate__form">
         <span class="calculate__progress-text">Шаг 1 из 4</span>
@@ -214,35 +214,41 @@
           <img src="../images/payouts1.png" alt="man">
         </div>
         <h3 class="title">Заболели сотрудники</h3>
-        <span class="subtitle">ОРВИ, грипп и другие частые болезни</span>
+        <p class="subtitle">ОРВИ, грипп и другие частые болезни</p>
       </div>
       <div class="block payout__cell">
         <div class="payout__cell-img">
           <img src="../images/payouts2.png" alt="man">
         </div>
         <h3 class="title">Нужна стоматологическая помощь</h3>
-        <span class="subtitle">Экстренная или плановая</span>
+        <p class="subtitle">Экстренная или плановая</p>
       </div>
       <div class="block payout__cell">
         <div class="icon-block">
           <img src="../images/vacuum-cleaner-icon.svg" alt="vacuum cleaner">
         </div>
-        <h3 class="title">Потребовалась скорая помощь</h3>
-        <span class="subtitle">Компенсируем часть расходов на уборку</span>
+        <div class="payout__text-block">
+          <h3 class="title">Потребовалась скорая помощь</h3>
+          <p class="subtitle">Компенсируем часть расходов на уборку</p>
+        </div>
       </div>
       <div class="block payout__cell">
         <div class="icon-block">
-          <img src="../images/camp-icon.svg" alt="vacuum cleaner">
+          <img src="../images/camp-icon.svg" alt="camp">
         </div>
-        <h3 class="title">Потребовалась госпитализация</h3>
-        <span class="subtitle">Возместим часть расходов </span>
+        <div class="payout__text-block">
+          <h3 class="title">Потребовалась госпитализация</h3>
+          <p class="subtitle">Возместим часть расходов </p>
+        </div>
       </div>
       <div class="block payout__cell">
         <div class="icon-block">
-          <img src="../images/tabbar-icon.svg" alt="vacuum cleaner">
+          <img src="../images/tabbar-icon.svg" alt="tabbar">
         </div>
-        <h3 class="title">Потребовался плановый осмотр</h3>
-        <span class="subtitle">Раз в год оплатим чекап</span>
+        <div class="payout__text-block">
+          <h3 class="title">Потребовался плановый осмотр</h3>
+          <p class="subtitle">Раз в год оплатим чекап</p>
+        </div>
       </div>
     </div>
   </div>
@@ -255,7 +261,7 @@
         <p class="subtitle trust__subtitle">Ведущие страховщики с рейтингом ruA+</p>
       </div>
       <div class="trust__image">
-        <img src="../images/trust.png" alt="icon">
+        <img src="../images/trust.png" width="476" height="308" loading="lazy" alt="icon">
       </div>
     </div>
   </div>
@@ -270,7 +276,7 @@
           <p class="subtitle">Защита от необоснованных трат</p>
         </div>
         <div class="advantages__image">
-          <img src="../images/advantages1.svg" alt="icon">
+          <img src="../images/advantages1.svg" loading="lazy" width="144" height="147" alt="icon">
         </div>
       </div>
       <div class="block advantages__cell">
@@ -279,7 +285,7 @@
           <p class="subtitle">Нет скрытых условий</p>
        </div>
        <div class="advantages__image">
-        <img src="../images/advantages2.svg" alt="icon">
+        <img src="../images/advantages2.svg" loading="lazy" width="143" height="130" alt="icon">
        </div>
       </div>
       <div class="block advantages__cell">
@@ -288,10 +294,10 @@
           <p class="subtitle">Вы сможете управлять всей информацией о договоре, менять параметры договора, расширять страховое покрытие и управлять списком застрахованных</p>
         </div>
         <div class="advantages__image">
-          <img src="../images/advantages3.svg" alt="icon">
+          <img src="../images/advantages3.svg" loading="lazy" width="495" height="208" alt="icon">
         </div>
         <div class="advantages__image-mobile">
-          <img src="../images/heart-mobile.svg" alt="icon">
+          <img src="../images/heart-mobile.svg" loading="lazy" width="189" height="186" alt="icon">
         </div>
       </div>
     </div>
@@ -355,35 +361,37 @@
         <button class="btn">Отправить</button>
       </form>
       <div class="feedback__image">
-        <img src="../images/feedback.png" alt="feedback">
+        <img src="../images/feedback.png" loading="lazy" width="504" height="300" alt="feedback">
       </div>
     </div>
   </div>
 </section>
   </main>
-  <footer class="footer footer__section">
+  <footer class="footer">
   <div class="container footer__container">
     <div class="footer__contacts">
       <div class="footer__left">
         <h3 class="footer__title">Контакты для связи</h3>
         <div class="footer__phone">
-          <a href="tel:8 (800) 550-35-64">8 (800) 550-35-64</a>
+          <a href="tel:+78005503564">8 (800) 550-35-64</a>
           <span>Телефон</span>
         </div>
-        <div class="footer__messengers">
-          <div class="footer__icon-block icon-block">
-            <img src="../images/whatsapp_icon.svg" alt="whatsapp">
-          </div>
-          <div class="footer__icon-block icon-block">
-            <img src="../images/telegram_icon.svg" alt="telegram">
-          </div>
-        </div>
+        <ul class="footer__messengers">
+          <li>
+            <a class="footer__icon-block icon-block" href="#" aria-label="telegram">
+              <img src="../images/whatsapp_icon.svg" alt="whatsapp">
+            </a>
+          </li>
+          <li>
+            <a class="footer__icon-block icon-block" href="#" aria-label="telegram">
+              <img src="../images/telegram_icon.svg" alt="telegram">
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="footer__right">
-       <a href="https://mainsgroup.ru/">
-          <div class="mains__logo">
-            <img src="../images/mains-logo.svg" alt="mains">
-          </div>
+       <a class="mains__logo" href="https://mainsgroup.ru/">
+          <img src="../images/mains-logo.svg" alt="mains">
        </a>
       </div>
     </div class="footer__contacts">

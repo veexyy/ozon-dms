@@ -1,11 +1,9 @@
 .trust {
   &__section {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 120px;
     overflow: hidden;
     @include small-tablet {
       padding-top: 20px;
-      padding-bottom: 20px;
     }
   }
   &__container {

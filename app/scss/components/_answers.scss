@@ -1,11 +1,9 @@
 .answers {
   &__section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
 
     @include small-tablet {
       padding-top: 20px;
-      padding-bottom: 20px;
     }
   }
 
@@ -27,6 +25,7 @@
       color: $dark-blue;
       cursor: pointer;
       width: 100%;
+      gap: 16px;
       border: none;
       text-align: left;
       outline: none;

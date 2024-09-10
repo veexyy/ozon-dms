@@ -14,7 +14,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0px;
+  @include tablet {
+    gap: 12px;
+  }
 }
 .sr-only {
   position: absolute;
